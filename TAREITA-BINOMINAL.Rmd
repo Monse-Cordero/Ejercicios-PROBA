@@ -1,0 +1,717 @@
+---
+title: "Untitled"
+output: html_document
+date: "2025-09-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## n = 100
+
+```{r}
+n1 <- 100; (n1)
+k <- 25
+p <- 0.3
+```
+
+```{r}
+mibinominal <- rbinom(n1,k,p)
+```
+
+```{r}
+plot(mibinominal, col="pink",
+main = "100 VA N(0,1)",
+xlab ="VA generados",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="lightgreen",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## GENERACION DE POISSON
+
+## n=500
+```{r}
+n2 <- 500; (n2)
+k <- 25
+p <- 0.3
+```
+
+```{r}
+mibinominal <- rbinom(n1,k,p)
+```
+
+```{r}
+plot(mibinominal, col="blue",
+main = "500 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="orange",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=1000
+```{r}
+n3 <- 1000; (n3)
+k <- 25
+p <- 0.3
+```
+
+```{r}
+mibinominal <- rbinom(n3,k,p)
+```
+
+```{r}
+plot(mibinominal, col="purple",
+main = "1000 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 1000 VA N(0,1)",
+     col="pink",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=5000
+```{r}
+n4 <- 5000; (n4)
+k <- 25
+p <- 0.3
+```
+
+```{r}
+mibinominal <- rbinom(n4,k,p)
+```
+
+```{r}
+plot(mibinominal, col="purple",
+main = "100 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 5000 VA N(0,1)",
+     col="red",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=10000
+```{r}
+n5 <- 10000; (n5)
+k <- 25
+p <- 0.3
+```
+
+```{r}
+mibinominal <- rbinom(n5,k,p)
+```
+
+```{r}
+plot(mibinominal, col="purple",
+main = "10000 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 10000 VA N(0,1)",
+     col="pink",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=15000
+```{r}
+n6 <- 15000; (n6)
+k <- 25
+p <- 0.3
+```
+
+```{r}
+mibinominal <- rbinom(n6,k,p)
+```
+
+```{r}
+plot(mibinominal, col="purple",
+main = "100 VA N(k,p)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 15000 VA N(0,1)",
+     col="pink",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## AHORA VARIAMOS LA P. POR UN VALOR DE P=0.45
+
+## n = 100
+
+```{r}
+n1 <- 100; (n1)
+k <- 25
+p <- 0.45
+```
+
+```{r}
+mibinominal <- rbinom(n1,k,p)
+```
+
+```{r}
+plot(mibinominal, col="pink",
+main = "100 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="lightgreen",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+
+
+
+## GENERACION DE POISSON
+
+## n=500
+```{r}
+n2 <- 500; (n2)
+k <- 25
+p <- 0.45
+```
+
+```{r}
+mibinominal <- rbinom(n2,k,p)
+```
+
+```{r}
+plot(mibinominal, col="blue",
+main = "500 VA N(0,1))",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="red",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=1000
+```{r}
+n3 <- 1000; (n3)
+k <- 25
+p <- 0.45
+```
+
+```{r}
+mibinominal <- rbinom(n3,k,p)
+```
+
+```{r}
+plot(mibinominal, col="yellow",
+main = "1000 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 1000 VA N(0,1)",
+     col="brown",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=5000
+```{r}
+n4 <- 5000; (n4)
+k <- 25
+p <- 0.45
+```
+
+```{r}
+mibinominal <- rbinom(n4,k,p)
+```
+
+```{r}
+plot(mibinominal, col="blue",
+main = "100 VA NN(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 5000 VA NN(0,1)",
+     col="gray",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=10000
+```{r}
+n5 <- 10000; (n5)
+k <- 25
+p <- 0.45
+```
+
+```{r}
+mibinominal <- rbinom(n5,k,p)
+```
+
+```{r}
+plot(mibinominal, col="purple",
+main = "10000 VA N(0,1))",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 10000 VA N(0,1)",
+     col="green",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=15000
+```{r}
+n6 <- 15000; (n6)
+k <- 25
+p <- 0.45
+```
+
+```{r}
+mibinominal <- rbinom(n6,k,p)
+```
+
+```{r}
+
+plot(mibinominal, col="purple",
+main = "100 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 15000 VA N(0,1)",
+     col="pink",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+
+# AHORA con p=0.8
+
+## n = 100
+
+```{r}
+n1 <- 100; (n1)
+k <- 25
+p <- 0.8
+```
+
+```{r}
+mibinominal <- rbinom(n1,k,p)
+```
+
+```{r}
+plot(mibinominal, col="pink",
+main = "100 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="lightgreen",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=500
+```{r}
+n2 <- 500; (n2)
+k <- 25
+p <- 0.8
+```
+
+```{r}
+mibinominal <- rbinom(n2,k,p)
+```
+
+```{r}
+plot(mibinominal, col="blue",
+main = "500 VA N(0,1))",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="red",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=1000
+```{r}
+n3 <- 1000; (n3)
+k <- 25
+p <- 0.8
+```
+
+```{r}
+mibinominal <- rbinom(n3,k,p)
+```
+
+```{r}
+plot(mibinominal, col="yellow",
+main = "1000 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 1000 VA N(0,1)",
+     col="brown",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=5000
+```{r}
+n4 <- 5000; (n4)
+k <- 25
+p <- 0.8
+```
+
+```{r}
+mibinominal <- rbinom(n4,k,p)
+```
+
+```{r}
+plot(mibinominal, col="blue",
+main = "100 VA NN(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 5000 VA NN(0,1)",
+     col="gray",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=10000
+```{r}
+n5 <- 10000; (n5)
+k <- 25
+p <- 0.8
+```
+
+```{r}
+mibinominal <- rbinom(n5,k,p)
+```
+
+```{r}
+plot(mibinominal, col="purple",
+main = "10000 VA N(0,1))",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 10000 VA N(0,1)",
+     col="green",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=15000
+```{r}
+n6 <- 15000; (n6)
+k <- 25
+p <- 0.8
+```
+
+```{r}
+mibinominal <- rbinom(n6,k,p)
+```
+
+```{r}
+
+plot(mibinominal, col="purple",
+main = "100 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 15000 VA N(0,1)",
+     col="pink",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## AHORA CON p=0.95
+
+## n = 100
+
+```{r}
+n1 <- 100; (n1)
+k <- 25
+p <- 0.95
+```
+
+```{r}
+mibinominal <- rbinom(n1,k,p)
+```
+
+```{r}
+plot(mibinominal, col="pink",
+main = "100 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="lightgreen",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=500
+```{r}
+n2 <- 500; (n2)
+k <- 25
+p <- 0.95
+```
+
+```{r}
+mibinominal <- rbinom(n2,k,p)
+```
+
+```{r}
+plot(mibinominal, col="blue",
+main = "500 VA N(0,1))",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 100 VA N(0,1)",
+     col="red",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=1000
+```{r}
+n3 <- 1000; (n3)
+k <- 25
+p <- 0.95
+```
+
+```{r}
+mibinominal <- rbinom(n3,k,p)
+```
+
+```{r}
+plot(mibinominal, col="yellow",
+main = "1000 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 1000 VA N(0,1)",
+     col="brown",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=5000
+```{r}
+n4 <- 5000; (n4)
+k <- 25
+p <- 0.95
+```
+
+```{r}
+mibinominal <- rbinom(n4,k,p)
+```
+
+```{r}
+plot(mibinominal, col="blue",
+main = "100 VA NN(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 5000 VA NN(0,1)",
+     col="gray",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=10000
+```{r}
+n5 <- 10000; (n5)
+k <- 25
+p <- 0.95
+```
+
+```{r}
+mibinominal <- rbinom(n5,k,p)
+```
+
+```{r}
+plot(mibinominal, col="purple",
+main = "10000 VA N(0,1))",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 10000 VA N(0,1)",
+     col="green",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## n=15000
+```{r}
+n6 <- 15000; (n6)
+k <- 25
+p <- 0.95
+```
+
+```{r}
+mibinominal <- rbinom(n6,k,p)
+```
+
+```{r}
+
+plot(mibinominal, col="purple",
+main = "100 VA N(0,1)",
+xlab ="Num de VA",
+ylab = "N(0,1)")
+
+```
+
+```{r}
+hist(mibinominal, main="Histograma 15000 VA N(0,1)",
+     col="pink",
+     xlab="VA generadas",
+     ylab="N(0,1)")
+
+```
+
+## COMPARACIOÓN DE GRAFICAS
+
+
+# Valores de n
+```{r}
+n_values <- c(100, 500, 1000, 5000, 10000, 15000)
+k <- 25
+p <- 0.3
+
+
+par(mfrow = c(2, 3))  # 2 filas, 3 columnas
+
+
+for (n in n_values) {
+  datos <- rbinom(n, k, p)
+  hist(datos, main = paste("Histograma n =", n),
+       col = "lightblue", xlab = "VA generadas", ylab = "Frecuencia")
+}
+```
+
+# Valores de n y p
+```{r}
+n_values <- c(100, 500, 1000, 5000, 10000, 15000)
+p_values <- c(0.3, 0.45, 0.8, 0.95)
+k <- 25
+
+
+par(mfrow = c(length(p_values), length(n_values)), mar = c(2,2,2,1))
+
+
+for (p in p_values) {
+  for (n in n_values) {
+    datos <- rbinom(n, k, p)
+    hist(datos, main = paste("n=", n, "\np=", p),
+         col = "pink", xlab = "", ylab = "", cex.main = 0.8)
+  }
+}
+```
