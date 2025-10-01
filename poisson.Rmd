@@ -1,0 +1,425 @@
+---
+title: "poisson"
+output: html_document
+date: "2025-10-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## GENERACION DE POISSON
+
+### $\lambda= 0.15$
+#### $N=100
+
+```{r}
+n1 <- 100
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n1,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n1,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n1,"VA POIS(",n1,",",milambda,")")
+plot(mipoisson,col="red",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n1,"VA Pois(",n1,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="brown",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=500$
+
+```{r}
+n2 <- 500
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n2,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n2,",",milambda,")") 
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n2,"VA POIS(",n2,",",milambda,")")
+plot(mipoisson,col="blue",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n2,"VA Pois(",n2,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="green",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=1000$
+
+```{r}
+n3 <- 1000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n3,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n3,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n3,"VA POIS(",n3,",",milambda,")")
+plot(mipoisson,col="pink",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n3,"VA Pois(",n3,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="purple",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+
+### $\lambda= 0.15$
+#### $N=5000$
+
+```{r}
+n4 <- 5000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n4,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n4,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n4,"VA POIS(",n4,",",milambda,")")
+plot(mipoisson,col="red",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n4,"VA Pois(",n4,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="orange",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=10000$
+
+```{r}
+n5 <- 10000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n5,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n5,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n5,"VA POIS(",n5,",",milambda,")")
+plot(mipoisson,col="black",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n5,"VA Pois(",n5,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="yellow",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=15000$
+
+```{r}
+n6 <- 15000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n6,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n6,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n6,"VA POIS(",n6,",",milambda,")")
+plot(mipoisson,col="gray",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n6,"VA Pois(",n6,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="lightgreen",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+## CAMBIO DEL VALOR DE LAMBDA
+
+
+
+### $\lambda= 0.30$
+#### $N=100
+
+```{r}
+n1 <- 100
+milambda <- 0.30
+```
+
+
+```{r}
+mipoisson <- rpois(n1,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n1,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n1,"VA POIS(",n1,",",milambda,")")
+plot(mipoisson,col="red",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n1,"VA Pois(",n1,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="brown",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=500$
+
+```{r}
+n2 <- 500
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n2,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n2,",",milambda,")") 
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n2,"VA POIS(",n2,",",milambda,")")
+plot(mipoisson,col="blue",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n2,"VA Pois(",n2,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="green",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=1000$
+
+```{r}
+n3 <- 1000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n3,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n3,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n3,"VA POIS(",n3,",",milambda,")")
+plot(mipoisson,col="pink",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n3,"VA Pois(",n3,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="purple",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+
+### $\lambda= 0.15$
+#### $N=5000$
+
+```{r}
+n4 <- 5000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n4,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n4,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n4,"VA POIS(",n4,",",milambda,")")
+plot(mipoisson,col="red",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n4,"VA Pois(",n4,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="orange",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=10000$
+
+```{r}
+n5 <- 10000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n5,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n5,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n5,"VA POIS(",n5,",",milambda,")")
+plot(mipoisson,col="black",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n5,"VA Pois(",n5,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="yellow",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
+
+### $\lambda= 0.15$
+#### $N=15000$
+
+```{r}
+n6 <- 15000
+milambda <- 0.15
+```
+
+
+```{r}
+mipoisson <- rpois(n6,milambda)
+```
+
+```{r}
+etiqueta_y <- paste0("Poisson(",n6,",",milambda,")")
+```
+## HISTOGRAMAS
+
+```{r}
+mititulo <- paste0(n6,"VA POIS(",n6,",",milambda,")")
+plot(mipoisson,col="gray",
+     main= mititulo,
+     xlab=" NUM de va",
+     ylab = etiqueta_y)
+```
+
+```{r}
+mititulo <- paste0("HISTOGRAMA", n6,"VA Pois(",n6,",", milambda,")")
+hist(mipoisson, main=mititulo,
+     col="lightgreen",
+     xlab="VA GENERADOS",
+     ylab= etiqueta_y)
+```
