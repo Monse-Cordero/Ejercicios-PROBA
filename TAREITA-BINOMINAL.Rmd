@@ -1,5 +1,6 @@
 ---
-title: "Untitled"
+title: "Tareita-Binominal
+Monserrath Antonio Cordero"
 output: html_document
 date: "2025-09-24"
 ---
@@ -714,4 +715,5 @@ for (p in p_values) {
          col = "pink", xlab = "", ylab = "", cex.main = 0.8)
   }
 }
+
 ```
